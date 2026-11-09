@@ -21,18 +21,6 @@ npx expo-doctor             # diagnose dependency and config issues
 npx expo install --fix      # fix incompatible package versions
 ```
 
-## USE THIS TO LOGIN ADMIN OR CASHIER
-These are only dummy accounts used to test the frontend. The backend and database are not yet added.
-
- Admin
- username- admin
- password- admin123
- Cashier
- username- cashier
- password - cashier123
-
-
-
 Run lint and typecheck before declaring any task done.
 
 ## Navigation & Routing
