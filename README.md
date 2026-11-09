@@ -34,6 +34,7 @@ These are only dummy accounts used to test the frontend. The backend and databas
 Admin
 - admin
 - admin123
-/ Cashier
+  
+Cashier
 -cashier
 -cashier123
