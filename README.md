@@ -19,6 +19,13 @@ A mobile application for managing sales, products, and inventory in a small stor
 ## Project Status
 Currently under development.
 
+# Commit with git
+
+git add .
+git commit -m "Update project code"
+git pull --rebase origin main
+git push origin main
+
 ## Commands
 
 ```bash
@@ -33,9 +40,4 @@ npx expo install --fix      # fix incompatible package versions
 These are only dummy accounts used to test the frontend. The backend and database are not yet added.
 Admin- admin / admin123 and Cashier- cashier/ cashier123
 
-# Commit with git
 
-git add .
-git commit -m "Update project code"
-git pull --rebase origin main
-git push origin main
