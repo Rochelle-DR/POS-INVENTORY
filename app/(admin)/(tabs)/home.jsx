@@ -23,7 +23,7 @@ export default function Home() {
   const router = useRouter();
 
   const handleManageCashiers = () => {
-    router.push("/(admin)/cashier"); // must match a real file in your app folder
+    router.push("/(admin)/cashier"); 
   };
 
   return (
@@ -57,7 +57,7 @@ export default function Home() {
             style={styles.actionBtn}
             activeOpacity={0.8}
             onPress={() => {
-              // TODO: go to the admin account screen
+              
             }}
           >
             <Text style={styles.actionText}>ADMIN ACCOUNT</Text>
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
   },
   body: {
     padding: 12,
-    paddingTop: 24,
+    paddingTop: 2,
     paddingBottom: 24,
     gap: 18,
   },
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
   panelTitle: {
     fontSize: 24,
     fontWeight: "800",
-    color: "#000", // was "#0000" (transparent)
+    color: "#000", 
   },
   grid: {
     flexDirection: "row",
@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   actionText: {
-    color: "#000", // was "#0000" (transparent)
+    color: "#000", 
     fontSize: 13,
     fontWeight: "500",
     textAlign: "center",

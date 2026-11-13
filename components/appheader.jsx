@@ -7,8 +7,7 @@ import {
   Alert,
 } from "react-native";
 import { useRouter } from "expo-router";
-import { clearSession } from "../lib/session"; 
-
+import { clearSession } from "../lib/session";
 export default function AppHeader({
   title = "Store",
   subtitle = "Management",
@@ -100,7 +99,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     paddingVertical: 10,
     borderRadius: 4,
-    marginBottom: 7, // see note below
+    marginBottom: 7, 
   },
   logoutText: {
     color: "#000",

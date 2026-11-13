@@ -18,3 +18,11 @@ export const fonts = {
   semibold: "Poppins_600SemiBold",
   bold: "Poppins_700Bold",
 };
+
+export const interFonts = {
+  regular: "Inter_400Regular",
+  medium: "Inter_500Medium",
+  semibold: "Inter_600SemiBold",
+  bold: "Inter_700Bold",
+};
+

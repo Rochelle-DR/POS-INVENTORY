@@ -94,9 +94,22 @@ const styles = StyleSheet.create({
     borderRadius: 23,
     overflow: 'hidden',
   },
+
   activeBackground: {
-    backgroundColor: '#B8DDF5',
-  },
+  backgroundColor: '#B8DDF5',
+  borderRadius: 18,
+  borderWidth: 1,
+  borderColor: '#FFFFFF',
+},
+
+activeIconContainer: {
+  backgroundColor: '#B8DDF5',
+  borderRadius: 18,
+  borderWidth: 1,
+  borderColor: '#FFFFFF',
+  padding: 10,
+},
+
   icon: {
     width: 40,
     height: 40,
