@@ -7,7 +7,7 @@ import {
   Alert,
 } from "react-native";
 import { useRouter } from "expo-router";
-import { clearSession } from "../lib/session"; // adjust to your actual path
+import { clearSession } from "../lib/session"; 
 
 export default function AppHeader({
   title = "Store",
