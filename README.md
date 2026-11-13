@@ -32,3 +32,10 @@ npx expo install --fix      # fix incompatible package versions
 # LOGIN FOR TESTING
 These are only dummy accounts used to test the frontend. The backend and database are not yet added.
 Admin- admin / admin123 and Cashier- cashier/ cashier123
+
+# Commit with git
+
+git add .
+git commit -m "Update project code"
+git pull --rebase origin main
+git push origin main
