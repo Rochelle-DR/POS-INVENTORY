@@ -19,12 +19,13 @@ A mobile application for managing sales, products, and inventory in a small stor
 ## Project Status
 Currently under development.
 
-# Commit with git
+## Commit using git
+- git add .
+- git commit -m "Update project code"
+- git pull --rebase origin main
+- git push origin main
 
-git add .
-git commit -m "Update project code"
-git pull --rebase origin main
-git push origin main
+
 
 ## Commands
 
