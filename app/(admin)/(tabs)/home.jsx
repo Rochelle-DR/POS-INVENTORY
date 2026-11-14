@@ -7,6 +7,7 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useRouter } from "expo-router";
+import { colors,colors2, radius, fonts, interFonts } from "../../../constants/theme";
 
 function StatCard({ label, value = "₱0.00" }) {
   return (
@@ -23,12 +24,11 @@ export default function Home() {
   const router = useRouter();
 
   const handleManageCashiers = () => {
-    router.push("/(admin)/cashier"); 
+    router.push("/(admin)/cashier");
   };
 
   return (
     <SafeAreaView style={styles.screen} edges={["top"]}>
-
       <ScrollView
         contentContainerStyle={styles.body}
         showsVerticalScrollIndicator={false}
@@ -56,9 +56,7 @@ export default function Home() {
           <TouchableOpacity
             style={styles.actionBtn}
             activeOpacity={0.8}
-            onPress={() => {
-              
-            }}
+            onPress={() => {}}
           >
             <Text style={styles.actionText}>ADMIN ACCOUNT</Text>
           </TouchableOpacity>
@@ -79,7 +77,7 @@ export default function Home() {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: "#FFFFFF",
+    backgroundColor: colors.screenBg,
   },
   body: {
     padding: 12,
@@ -88,15 +86,15 @@ const styles = StyleSheet.create({
     gap: 18,
   },
   panel: {
-    backgroundColor: "#A8D8F0",
-    borderRadius: 12,
+    backgroundColor: colors.body,
+    borderRadius: radius.card,
     padding: 12,
     gap: 15,
   },
   panelTitle: {
+    fontFamily: fonts.bold,
     fontSize: 24,
-    fontWeight: "800",
-    color: "#000", 
+    color: colors.text,
   },
   grid: {
     flexDirection: "row",
@@ -107,48 +105,48 @@ const styles = StyleSheet.create({
   statCard: {
     width: "48%",
     minHeight: 100,
-    backgroundColor: "#D6ECFA",
-    borderRadius: 8,
+    backgroundColor: colors2.cardLight,
+    borderRadius: radius.input,
     padding: 10,
     justifyContent: "space-between",
   },
   statLabel: {
+    fontFamily: interFonts.medium,
     fontSize: 22,
-    fontWeight: "500",
-    color: "#989898",
+    color: colors2.muted,
   },
   statValue: {
+    fontFamily: interFonts.bold,
     fontSize: 20,
-    fontWeight: "800",
-    color: "#1B2A41",
+    color: colors.text,
   },
   noticePanel: {
     minHeight: 150,
   },
   line: {
     height: 1,
-    backgroundColor: "#1B2A41",
+    backgroundColor: colors.border,
     marginTop: 8,
     opacity: 0.5,
   },
   actions: {
     flexDirection: "row",
     justifyContent: "center",
-    gap: 16,
+    gap: 30,
   },
   actionBtn: {
     flex: 1,
     maxWidth: 160,
     height: 50,
-    backgroundColor: "#4B80BB",
-    borderRadius: 15,
+    backgroundColor: colors.button,
+    borderRadius: radius.button,
     alignItems: "center",
     justifyContent: "center",
   },
   actionText: {
-    color: "#000", 
+    fontFamily: interFonts.medium,
+    color: colors.text,
     fontSize: 13,
-    fontWeight: "500",
     textAlign: "center",
   },
 });

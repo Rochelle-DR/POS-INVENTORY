@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, Image, Pressable } from 'react-native';
-import React from 'react';
 import { Link, useRouter } from 'expo-router';
 import Logo from '../assets/Store.png';
+import { colors, radius, fonts, interFonts } from '../constants/theme';
 
 const Welcome = () => {
   const router = useRouter();
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#fcfcfc',
+    backgroundColor: colors.screenBg,
     paddingHorizontal: 24,
   },
   logo: {
@@ -45,14 +45,15 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   title: {
-    fontWeight: 'bold',
+    fontFamily: fonts.bold,
     fontSize: 24,
-    color: '#1F4E8C',
+    color: colors.border,
     textAlign: 'center',
   },
   subtitle: {
+    fontFamily: interFonts.regular,
     fontSize: 14,
-    color: '#000000',
+    color: colors.text,
     textAlign: 'center',
     marginTop: 6,
     marginBottom: 32,
@@ -60,20 +61,21 @@ const styles = StyleSheet.create({
   button: {
     width: '100%',
     height: 48,
-    borderRadius: 8,
-    backgroundColor: '#4B80BB',
+    borderRadius: radius.button,
+    backgroundColor: colors.button,
     alignItems: 'center',
     justifyContent: 'center',
   },
   pressed: { opacity: 0.85 },
   buttonText: {
-    color: '#fff',
-    fontWeight: 'bold',
+    fontFamily: fonts.semibold,
+    color: colors.card,
     fontSize: 14,
   },
   link: {
+    fontFamily: interFonts.regular,
     marginTop: 18,
-    color: '#00050b',
+    color: colors.text,
     fontSize: 13,
   },
 });

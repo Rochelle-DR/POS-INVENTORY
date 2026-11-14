@@ -9,9 +9,16 @@ export const colors = {
   text: "#000000",
   card:"#FFFFFF",
   card2:"#A8D8F0"
+
 };
 
-export const radius = { card: 24, input: 10, button: 10 };
+export const colors2 = {
+  
+  cardLight: "#D6ECFA",
+  muted: "#989898",
+};
+
+export const radius = { card: 24, input: 15, button: 10 };
 export const fonts = {
   regular: "Poppins_400Regular",
   medium: "Poppins_500Medium",

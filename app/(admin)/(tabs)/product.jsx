@@ -9,13 +9,14 @@ import {
   Alert,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { colors, radius, colors2, interFonts } from "../../../constants/theme";
 
 function InputCard({ label, ...props }) {
   return (
     <TextInput
       style={styles.card}
       placeholder={label}
-      placeholderTextColor="#989898"
+      placeholderTextColor={colors.placeholder}
       {...props}
     />
   );
@@ -32,7 +33,7 @@ export default function Product() {
       Alert.alert("Missing info", "Please fill in all fields.");
       return;
     }
-  
+
     console.log({
       name: name.trim(),
       stock: Number(stock),
@@ -91,7 +92,7 @@ export default function Product() {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: "#FFFFFF",
+    backgroundColor: colors.screenBg,
   },
   body: {
     padding: 12,
@@ -99,8 +100,8 @@ const styles = StyleSheet.create({
     paddingBottom: 24,
   },
   panel: {
-    backgroundColor: "#A8D8F0",
-    borderRadius: 12,
+    backgroundColor: colors.body,
+    borderRadius: radius.card,
     padding: 10,
     gap: 12,
     alignItems: "center",
@@ -115,26 +116,27 @@ const styles = StyleSheet.create({
   card: {
     width: "48%",
     height: 55,
-    backgroundColor: "#D6ECFA",
-    borderRadius: 10,
+    backgroundColor: colors2.cardLight,
+    borderRadius: radius.input,
     paddingHorizontal: 14,
+    fontFamily: interFonts.semibold,
     fontSize: 20,
-    fontWeight: "700",
-    color: "#1B2A41",
+    color: colors.text,
   },
   addBtn: {
     width: 130,
     height: 42,
-    backgroundColor: "#4B80BB",
+    backgroundColor: colors.button,
     borderWidth: 1,
-    borderColor: "#000",
-    borderRadius: 8,
+    borderColor: colors.text,
+    borderRadius: radius.button,
     alignItems: "center",
     justifyContent: "center",
   },
   addText: {
-    color: "#000",
+    fontFamily: interFonts.semibold,
+    color: colors.text,
     fontSize: 22,
-    fontWeight: "800",
+    fontWeight:700,
   },
 });

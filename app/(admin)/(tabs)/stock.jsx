@@ -13,7 +13,8 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 import { colors, radius, fonts, interFonts } from "../../../constants/theme";
 
-const INITIAL = [];
+const INITIAL = [
+];
 
 const MIN_ROWS = 6; 
 
